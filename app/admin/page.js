@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import AdminNavbar from "@/components/Admin/AdminNavbar";
+import AdminNavbar from "@/components/Admin/header/AdminNavbar";
 import UsersTable from "@/components/UsersTable";
 import LoadingButton from "@/components/LoadingButton";
 import Search from "@/components/Admin/Search";
@@ -112,9 +112,6 @@ const page = () => {
 
   return (
     <div className="admin-page h-full">
-      <header>
-        <AdminNavbar />
-      </header>
       <div className="container mx-auto sm:px-4 max-w-full p-6">
         <div className="flex flex-wrap ">
           <div className="relative flex-grow max-w-full flex-1 px-4">
